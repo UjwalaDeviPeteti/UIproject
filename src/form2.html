@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt{
+            font-weight:bold;
+        }
+        .user:invalid+div{
+            display:block; 
+            color:red;
+        }
+        .user:valid+div{
+            display:none;
+            
+        }
+        .mobile:invalid+div{
+            display:inline;
+            color:red;
+        }
+        .mobile:valid+div{
+            display:none;
+        }
+    </style>
+</head>
+<body><form>
+    <dt>user name</dt>
+    <dd>
+        <input type="text" name="text"  minlength="4" maxlength="10"  placeholder="name" class="user" >
+        <div>user name required</div>
+    </dd>
+    <dt>mobile</dt>
+    <dd>
+        <input type="text" placeholder="number"  pattern="\d{10}" class="mobile" >
+        <div>invalid mobile number</div>
+        <input type="color"  name="color">
+        <input type="range" min="20" max="40">
+        <input type="date" name="depature">
+        <input type="time" name="depature">
+        <input type="datetime-local" name="depature">
+        <input type="month" name="depature">
+        <input type="file" name="photo" multiple accept=".jpg">
+    </dd>
+    <dt>gender</dt>
+    <dd>
+        <input type="radio"  value="male" checked name="gender"><label>male</label>
+    </dd>
+    <dd>
+        <input type="radio" name="gender">female
+    </dd>
+    <dt>select course</dt>
+    <dd><input type="checkbox" name="course">ui technologies</dd>
+    <dd><input type="checkbox" name="course">front end technologies</dd>
+    
+    <button>submit</button>
+</form>
+</body>
+</html>

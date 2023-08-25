@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        details div{
+            border:1px solid black;
+            width:80px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            padding:5px;
+            background-color: red;
+            color:#fbf4f4;
+        }
+        details div:hover{
+            background-color: black;
+            font-size:20px;
+            cursor:not-allowed;
+        }
+        dialog{
+            width:600px;
+        }
+        h1{
+            text-align:center;
+        }
+        textarea{
+            width:500px;height:100px;
+            margin-left:50px;
+            margin-bottom: 20px;;
+        }
+        .b{
+            text-align:center;
+            padding:10px;
+            margin-left:250px;
+            background-color: black;
+            color:white;
+        }
+        .b:hover{
+            background-color: red;
+            color:white;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <menu>
+            <details >
+                <summary>Engineering</summary>
+                <div>CSE</div>
+                <div>ECE</div>
+                <div>EEE</div>
+                <div>MECH</div>
+            </details>
+        </menu>
+    </nav>
+    <dialog open>
+        <h1>your comments</h1>
+        <textarea rows="4" columns="40"></textarea>
+        <div>
+        <button class="b">thankyou</button>
+    </div>
+    </dialog>
+    
+</body>
+</html>

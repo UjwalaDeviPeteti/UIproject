@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hd{
+            font-weight: bold;
+        }
+        ul{
+            list-style:none;
+            border:1px solid black;
+            width:100px;
+            height:50px;
+            overflow:auto;
+            padding:10px;
+        }
+        .note{
+            border:1px solid gray;
+            padding:10px;
+            width:200px;
+        }
+        .terms:checked+label{
+            color:green;
+        }
+        .terms+label{
+            color:red;
+        }
+        .terms-button{
+            display:none;
+        }
+        .terms:checked-button{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="hd">select course</div>
+        <div>
+        <ul>
+            <li><input type="checkbox">html</li>
+            <li><input type="checkbox">css</li>
+            <li><input type="checkbox">js</li>
+            <li><input type="checkbox">bootstrap</li>
+        </ul>
+    </div>
+    <div>
+        <label class="hd">terms and conditions</label>
+        <div class="note">
+            jdhdgvhvghhhghbb<br>
+            dnjhjdn
+        </div>
+        <div>
+            <input type="checkbox" class="terms"><label>i accept</label>
+        </div>
+        <button class="hd">submit</button>
+    </div>
+    <dt>select</dt>
+    <dd>
+        <select>
+            <option>choose gender</option>
+            <option>male</option>
+            <option>female</option>
+        </select>
+    </dd>
+    <dd>
+    <select>
+        <option>choose course</option>
+        <optgroup label="courses">
+            <option>cse</option>
+            <option>ece</option>
+        </optgroup>
+        <optgroup label="classes">
+            <option>one</option>
+            <option>two</option>
+        </optgroup>
+    </dd>
+
+    </select>
+    </form>
+</body>
+</html>
