@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1 {
+            color:red;
+        }
+        h2~p{
+            color:green;
+        }
+        p:nth-child(6){
+            color:pink;
+        }
+
+
+
+
+
+
+        thead tr{
+            background-color: black;
+            color:white;
+        }
+        tbody tr:nth-child(even){
+            background-color: yellow;
+        }
+        tbody tr:nth-child(odd){
+            background-color: skyblue;
+        }
+        
+
+
+
+
+        p::first-letter{
+            font-size:30px;
+            color:red;
+        }
+        p::first-line{
+            background-color: rgb(17, 138, 26);;
+            color:white;
+        }
+        p::selection{
+            background-color: blue;;
+        }
+        ul{
+            display:flex;
+            list-style:none;
+        }
+        li::after{
+            content:">>";
+        }
+        li:last-child::after{
+            content:"";
+
+        }
+        li::before{
+            content:">>";
+        }
+        li:first-child::before{
+            content:"";
+        }
+        input::placeholder{
+            color:rgba(217, 34, 43, 1);
+            background-color:hsla(60deg,50%,50%,0.5);
+        }
+        body{
+            background-image: linear-gradient( red,yellow,blue);
+        }
+ul{
+    background-image: radial-gradient(yellow,pink);
+}
+
+
+
+
+
+
+.container{
+    border:1px solid red;
+    background-color:rgb(141, 12, 96);
+    color:white;
+    padding:20px;
+}
+p{
+    border:inherit;
+    padding:inherit;
+    color:initial;
+}
+h2{
+    font-size:unset;
+}
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <h2>hello</h2>
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+        <p>para5</p>
+        <p>para6</p>
+    </div>
+
+
+
+
+    <!--structural selectors-->
+    <table border="1" width="500">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>price</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+            </tbody>
+        </thead>
+    </table>
+
+
+
+
+
+    <!--behavioural selectors-->
+    <ul> 
+        <li>home</li>
+        <li>contact</li>
+        <li>about us</li>
+        <li>blogs</li>
+    </ul>
+    <p>Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India</p>
+                <input type="text" placeholder="username">
+
+
+
+
+         <!--css inheritance-->
+         <h2>css inheritance</h2>
+         <div class="container">
+            parent text
+                <p>child text</p>
+            </div>
+</body>
+</html>

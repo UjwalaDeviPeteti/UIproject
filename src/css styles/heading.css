@@ -1,0 +1,78 @@
+h1{
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+
+
+
+
+
+
+
+/*dynamic pseudo classes*/
+
+h2:hover{
+    color:red;
+    background-color: black;
+}
+img:hover{
+    width:200px;
+    height:200px;
+
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
+    font-size:40px;
+}
+a:active{
+    color:#130c0c;
+}
+a:visited{
+    color:yellow;
+}
+
+
+/*element state pseudo classes*/
+#username+div{
+    display:none;
+}
+#username:focus+div{
+    display:block;
+    color:red;
+}
+#username:focus{
+    background-color:black;
+}
+#username:read-only{
+    cursor:not-allowed;
+}
+button:disabled{
+    cursor:not-allowed;
+}
+.terms+span{
+    color:red;
+}
+.terms:checked+span{
+    color:blue;
+}
+input:optional+span{
+    display:none;
+
+}
+input:required+span{
+    display:inline;
+    color:red;
+}
+input:required{
+    background-color: black;
+}
+#username:valid+div{
+    display:none;
+}
+#username:valid{
+    background-color:green;
+}

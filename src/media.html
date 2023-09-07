@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        .details{
+            display:grid;
+            grid-template-columns:6fr 6fr;
+        }
+        .qr{
+            display:none;
+        }
+    </style>
+    <style type="text/css" media="print">
+        .screen,button{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <dl style="width:300px;">
+        <dt>booking summary</dt>
+        <img  class="qr" src="/public/images/qrcode.svg" width="200" height="200">
+        <img  class="screen" src="/public/images/amazon.jpg" width="200" height="200">
+
+    
+    <dl class="details">
+        <dt>movie name</dt>
+        <dd>avatar</dd>
+        <dt>cinema</dt>
+        <dd>pvp</dd>
+        <dt>show time</dt>
+        <dd>10:30 am</dd>
+    </dl>
+    </dl>
+    <button onclick="window.print()">print ticket</button>
+</body>
+</html>

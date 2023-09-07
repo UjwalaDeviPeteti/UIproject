@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <style>
+        nav{
+            display:flex;
+            justify-content: space-between;
+            background-color: black;;
+            padding:5px;
+            position:sticky; /*position:fixed;*/
+            top:0px;
+            margin-bottom: 30px;
+        }
+        header{
+            margin-bottom:100px;
+        }
+        .count{
+            background-color:black;
+            color:white;
+            padding:3px;
+            border-radius:30px;
+            font-weight:bold;
+            position:absolute;
+            right:-10px;
+            top:-10px;
+            width:30px;
+            height:30px;
+        }
+        button{
+            position:relative;
+        }
+        
+        .card-1{
+            width:200px;
+            height:250px;
+            box-shadow:2px 3px 3px gray;
+            background-color: #33ff00;
+            color:white;
+            padding:10px;
+        }
+        
+        .card-2{
+            width:200px;
+            height:250px;
+            box-shadow:2px 3px 3px gray;
+            background-color: red;
+            color:white;
+            padding:10px;
+        
+        }
+        .card-3{
+            width:200px;
+            height:250px;
+            box-shadow:2px 3px 3px gray;
+            background-color: green;
+            
+            color:white;
+            padding:10px;
+        }
+        .card-4{
+            width:200px;
+            height:250px;
+            box-shadow:2px 3px 3px gray;
+            background-color: blue;
+            
+            color:white;
+            padding:10px;
+        }
+        .card{
+            display:grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-left:100px;
+        }
+        .card:hover{
+            width:300px;
+            height:400px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <header>
+        <img src="/public/images/php.jpg" width="70%">
+    </header>
+    <nav>
+        <div>
+            <select class="form-select">
+                <option>select city</option>
+            </select>
+        </div>
+        <div>
+            <select class="form-select">
+                
+                <option>select movie</option>
+            </select>
+        </div>
+        <div>
+             <select class="form-select">
+                <option>
+                    select date
+                </option>
+             </select>
+        </div>
+        <div>
+            <select class="form-select">
+                <option>select time</option>
+            </select>
+        </div>
+        <div>
+            <select class="form-select">
+                <option>
+                    select seats
+                </option>
+            </select>
+        </div>
+        <div>
+            <button class="btn btn-danger ">Book</button>
+        </div>
+    </nav>
+    <div >
+        <button class="btn btn-warning btn-lg">
+        <span class="bi bi-bell"></span>
+        notifications
+        <span class="count">4</span>
+    </button>
+    <h2>cart</h2>
+    <span class="bi bi-cart"></span>
+<span class="cart-count">4</span>    </div>
+    <section>
+        Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+                Flipkart Internet Private Limited,
+
+        Buildings Alyssa, Begonia &
+        
+        Clove Embassy Tech Village,
+        
+        Outer Ring Road, Devarabeesanahalli Village,
+        
+        Bengaluru, 560103,
+        
+        Karnataka, India
+        Flipkart Internet Private Limited,
+
+            Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            Bengaluru, 560103,
+            
+            Karnataka, India
+            Flipkart Internet Private Limited,
+
+                Buildings Alyssa, Begonia &
+                
+                Clove Embassy Tech Village,
+                
+                Outer Ring Road, Devarabeesanahalli Village,
+                
+                Bengaluru, 560103,
+                
+                Karnataka, India
+    </section>
+
+    
+    <div class="card">
+        <div class="card-1">
+            <h2>card-1</h2>
+
+        </div>
+        <div class="card-2">
+            <h2>card-2</h2>
+        </div>
+        <div class="card-3">
+            <h2>card-3</h2>
+        </div>
+        <div class="card-4">
+            <h2>card-4</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
